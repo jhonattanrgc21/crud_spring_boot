@@ -1,0 +1,15 @@
+server:
+    port: 8100
+spring:
+    application:
+        name: demo_spring_boot
+    datasource:
+        url: jdbc:mysql://localhost:3306/demo_spring_boot
+        username: root
+        password:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        database-platform: org.hibernate.dialect.MySQL5Dialect
+        generate-ddl: true
