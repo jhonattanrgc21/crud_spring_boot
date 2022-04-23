@@ -127,7 +127,7 @@ public class User implements Serializable{
         this.updateAt = new Date();
     }
 
-    @Override
+    /*@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -153,5 +153,5 @@ public class User implements Serializable{
                 ", createAt=" + createAt +
                 ", updateAt=" + updateAt +
                 '}';
-    }
+    }*/
 }
