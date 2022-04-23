@@ -1,2 +1,2 @@
-# crud_spring_boot
-Este repositorio almacena la implementacion de un CRUD de estudiantes mediante el framework para Back-end Spring Boot del lenguaje de programacion Java..
+# demo_spring_boot
+El proposito de este proyecto es la practica de la sintaxis de Java en el Framework para Back-end Spring boot, mediante la implementacion de un API REST la cual permita las operaciones CRUD entre las entidades User, Role y Project
