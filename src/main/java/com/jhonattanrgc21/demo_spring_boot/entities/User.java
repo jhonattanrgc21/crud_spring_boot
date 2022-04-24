@@ -28,7 +28,7 @@ public class User implements Serializable{
     @Column(name = "email", nullable = false, unique = true, length = 50)
     private String email;
 
-    @Column(name = "password", nullable = false, length = 15)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @Column(name = "create_at")
@@ -91,7 +91,6 @@ public class User implements Serializable{
         this.email = email;
     }
 
-    @JsonIgnore
     public String getPassword() {
         return password;
     }
@@ -127,7 +126,7 @@ public class User implements Serializable{
         this.updateAt = new Date();
     }
 
-    /*@Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -153,5 +152,5 @@ public class User implements Serializable{
                 ", createAt=" + createAt +
                 ", updateAt=" + updateAt +
                 '}';
-    }*/
+    }
 }
