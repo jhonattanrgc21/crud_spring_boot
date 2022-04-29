@@ -11,6 +11,19 @@ spring:
     jpa:
         hibernate:
             ddl-auto: update
+            naming:
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         database-platform: org.hibernate.dialect.MySQL5Dialect
         generate-ddl: true
         show-sql: true
+
+#JSONDOC
+# mandatory configuration
+jsondoc:
+    version: 1.0
+    basePath: http://localhost:8100
+    packages: [ com.jhonattanrgc21.demo_spring_boot.controllers, com.jhonattanrgc21.demo_spring_boot.entities ]
+  # optional configuration
+    playgroundEnabled: true
+    displayMethodAs: URI
