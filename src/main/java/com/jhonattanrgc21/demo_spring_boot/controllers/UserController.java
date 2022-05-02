@@ -84,7 +84,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    @ApiMethod(description = "Permite eliminar usuario mediante su ID")
+    @ApiMethod(description = "Permite eliminar usuarios mediante su ID")
     public ResponseEntity<?> deleteById(@PathVariable("id") Long id){
         Optional<User> user = this.userServices.findById(id);
         if (!user.isPresent()) {

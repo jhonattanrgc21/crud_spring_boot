@@ -22,7 +22,7 @@ spring:
 # mandatory configuration
 jsondoc:
     version: 1.0
-    basePath: http://localhost:8100/jsondoc-ui.html#
+    basePath: http://localhost:8100
     packages: [ com.jhonattanrgc21.demo_spring_boot.controllers, com.jhonattanrgc21.demo_spring_boot.entities ]
   # optional configuration
     playgroundEnabled: true
